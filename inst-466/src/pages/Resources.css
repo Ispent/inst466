@@ -1,0 +1,129 @@
+.resources-section {
+  margin-bottom: 56px;
+}
+
+.resources-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--amber);
+  display: inline-block;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.1s;
+  text-align: left;
+}
+
+.resource-card:hover {
+  border-color: var(--amber);
+  transform: translateY(-2px);
+}
+
+.resource-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.resource-url {
+  font-size: 12px;
+  color: var(--amber);
+  font-family: var(--mono);
+}
+
+.resource-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 8px 0 0;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-card {
+  display: flex;
+  gap: 32px;
+  padding: 24px 28px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 0.2s;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.social-card:hover {
+  border-color: var(--amber);
+}
+
+.social-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 180px;
+  flex-shrink: 0;
+}
+
+.social-platform-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.social-handle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--mono);
+}
+
+.social-name {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.social-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .social-meta {
+    min-width: auto;
+  }
+}
