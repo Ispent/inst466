@@ -68,8 +68,8 @@ const socialMedia = [
   },
   {
     platform: 'EEOC',
-    handle: '@EEOCnews',
-    url: 'https://twitter.com/EEOCnews',
+    handle: '@USEEOC',
+    url: 'https://twitter.com/USEEOC',
     platform_name: 'X (Twitter)',
     description: 'Official updates from the U.S. Equal Employment Opportunity Commission, including guidance and enforcement actions related to AI in hiring.',
   },
